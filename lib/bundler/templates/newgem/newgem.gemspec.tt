@@ -35,6 +35,8 @@ Gem::Specification.new do |spec|
   spec.extensions    = ["ext/<%=config[:underscored_name]%>/extconf.rb"]
 <%- end -%>
 
+  # spec.add_runtime_dependency "json", "~> 1.8"
+
   spec.add_development_dependency "bundler", "~> <%= config[:bundler_version] %>"
   spec.add_development_dependency "rake", "~> 10.0"
 <%- if config[:ext] -%>
