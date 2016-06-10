@@ -85,7 +85,7 @@ describe "bundler version trampolining" do
       expect(err).to eq(<<-E.strip)
 Installing the inferred bundler version (= 9999) failed.
 If you'd like to update to the current bundler version (1.12.5) in this project, run `bundle update --bundler`.
-The error was: Unable to resolve dependency: user requested 'bundler (= 9999)'
+The error was:
       E
     end
   end
